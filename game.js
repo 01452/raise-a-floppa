@@ -4,7 +4,7 @@ canvas.width = window.innerWidth;
 canvas.height = window.innerHeight;
 
 let state = {
-    coins: 1000000,
+    coins: 0,
     happiness: 100,
     hunger: 100,
     baseLevel: 1,
@@ -611,7 +611,7 @@ canvas.addEventListener('click', (e) => {
         playSound("clickfloppa")
 
         // Key drop logic
-        if (!state.hasKey && Math.random() < 50) { // 0.01% chance
+        if (!state.hasKey && Math.random() < 0.01) { // 0.01% chance
             state.hasKey = true;
             alert("Вы нашли редкий ключ! Используйте его, чтобы открыть странную локацию.");
         }
