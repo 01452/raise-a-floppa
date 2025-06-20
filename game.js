@@ -611,7 +611,7 @@ canvas.addEventListener('click', (e) => {
         playSound("clickfloppa")
 
         // Key drop logic
-        if (!state.hasKey && Math.random() < 0.01) { // 0.01% chance
+        if (!state.hasKey && Math.random() < 0.0001) { // 0.01% chance
             state.hasKey = true;
             alert("Вы нашли редкий ключ! Используйте его, чтобы открыть странную локацию.");
         }
